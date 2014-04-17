@@ -14,13 +14,23 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+h1, h2 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: bold;
+}
+h1 {
+    font-size: 120%;
+}
+h2 {
+    font-size: 110%;
+}
+h3, h4, h5, h6 {
+  font-size: 100%;
+}
 
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
@@ -56,13 +66,16 @@ a:visited { color: #a0a; }
 /*****************************************************************************/
 
 .site {
-  font-size: 115%;
   text-align: justify;
   width: 42em;
-  margin: 3em auto 2em;
+  margin: 2em auto 2em;
   line-height: 1.5em;
 }
-
+.site h2 {
+  padding-top: 2px;
+  border-top: 1px solid gray;
+  margin-left: -10em;
+}
 .header a {
   font-weight: bold;
   text-decoration: none;
